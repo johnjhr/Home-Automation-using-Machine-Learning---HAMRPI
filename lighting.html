@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <title>ECE PROJECT- HOME UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-image {
+      /* The image used */
+      background-image: url("/bg.jpg");
+      
+      /* Add the blur effect */
+      filter: blur(2px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.form-group {
+    float:left;
+    align: center;
+} 
+    </style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="security.html">Fire System</a></li>
+  <li><a href="sensors.html">Emotion Recog</a></li>
+  <li><a href="lighting.html">Lighting</a></li>
+  <li><a href="kitchen.html">Kitchen</a></li>
+  <li><a href="livingroom.html">Living-Room</a></li>
+
+</ul>
+</body>
+</head>
+<style>
+    .btn {
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      margin:0 auto;
+      display:inline-block;
+    }
+    .violet {background-color:  rgb(92, 0, 145);} 
+    .violet:hover {background-color:  rgb(178, 0, 248);}
+    .indigo {background-color:  rgb(75, 0, 130);} 
+    .indigo:hover {background-color:  rgb(75, 0,100);}
+    .orange {background-color:  rgb(255, 175, 27);} 
+    .orange:hover {background-color:  rgb(255, 154, 2);}    
+    .success {background-color: #4CAF50;} 
+    .success2 {background-color:  #0f408f;} 
+    .success2:hover {background-color:  #1263e6;} 
+    .success3 {background-color: #c7c400;}
+    .success3:hover {background-color: #e4d233;}
+    .success4 {background-color:  #405074;} 
+    .success4:hover {background-color:  #1e2536;} 
+    .success5 {background-color:  #3d3f44;} 
+    .success5:hover {background-color:  rgb(149, 155, 170);} 
+    .success6 {background-color:  rgb(203, 0, 63);} 
+    .success6:hover {background-color:  rgb(255, 32, 103);} 
+    .dynamic {background-color:  rgb(148, 88, 104);} 
+    .dynamic:hover {background-color:  rgb(214, 118, 118);}
+    .whte {background-color:  rgb(109, 104, 106);} 
+    .whte:hover {background-color:  rgb(138, 138, 138);}
+    .success:hover {background-color: #46a049;}
+    .danger {background-color: #f44336;} /* Red */ 
+    .danger:hover {background: #da190b;}
+    
+ </style>
+
+<body >
+
+  <div class="bg-image"> </div>
+  <div class="bg-text">
+
+<br>
+<b><font size="+2" color="White">Ambient Lighting Control Panel </font><b>
+    <br> 
+    <br>
+    <div class="form-group">
+    <form action="http://192.168.43.139/resets.php" method="get">
+      <input type="hidden" value="true" name="kill">
+      <button class="btn violet" type="submit">Reset</button></form> 
+    </div>
+
+    <div class="form-group">
+    <form action="http://192.168.43.139/light.php" method="get">
+      <input type="hidden" value="true" name="reset22">
+      <button class="btn violet" type="submit">On/Off</button></form> 
+    </div>
+
+    <div class="form-group">
+      <form action="http://192.168.43.139/light.php" method="get">
+        <input type="hidden" value="true" name="random">
+        <button class="btn violet" type="submit">Random </button></form> 
+      </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+<div class="form-group">
+    <b><font color="White" Align="Left"> Mood Lighting </font> <b>
+
+    <br>
+    <br>
+    
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="angry">
+    <button class="btn danger" type="submit">Anger</button></form> 
+  </div>
+  
+  
+  <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+      <input type="hidden" value="true" name="lively">
+      <button class="btn success2" type="submit">Lively</button></form>
+  </div>
+  
+  
+   <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="happy">
+    <button class="btn success3" type="submit">happy</button></form> 
+  </div>
+  
+   
+  <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="sad">
+    <button class="btn success4" type="submit">Sad</button></form> 
+  </div>
+  
+  
+  <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="relaxed">
+    <button class="btn success5" type="submit">relaxed</button> </form> 
+  </div>
+  
+  
+  <div class="form-group">
+      <br>
+      <br>
+      
+   <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="active">
+    <button class="btn success6" type="submit">Active</button></form> 
+  </div>
+  
+  
+    <div class="form-group">
+        <br>
+        <br>
+        
+  <form action="http://192.168.43.139/light.php" method="get">
+  <input type="hidden" value="true" name="organic">
+  <button class="btn success" type="submit">Organic</button></form> 
+  </div>
+
+</form>
+<p> 
+    <br>
+    <br>
+    <br>
+    <br>
+<br>
+<div class="form-group">
+    <b> <font color="White" Align="Left">Dynamic-Modes </font> <b>
+    <br>
+    <br>
+    
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="fire">
+    <button class="btn violet" type="submit">Fire</button></form> 
+  </div>
+  
+  
+  <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+      <input type="hidden" value="true" name="colorwipe">
+      <button class="btn indigo" type="submit">Colour-wipe</button></form>
+  </div>
+  
+  
+   <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="cylon">
+    <button class="btn success2" type="submit">Cylon</button></form> 
+  </div>
+  
+   
+  <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="fadergb">
+    <button class="btn success" type="submit">Fade RGB</button></form> 
+  </div>
+  
+  
+  <div class="form-group">
+      <br>
+      <br>
+      
+  <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="fadeinout">
+    <button class="btn success3" type="submit">Fade InOut</button> </form> 
+  </div>
+  
+  
+  <div class="form-group">
+      <br>
+      <br>
+      
+   <form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="Twinkle">
+    <button class="btn orange" type="submit">Twinkle</button></form> 
+  </div>
+  
+  
+    <div class="form-group">
+        <br>
+        <br>
+        
+  <form action="http://192.168.43.139/light.php" method="get">
+  <input type="hidden" value="true" name="chase">
+  <button class="btn danger" type="submit">Chase</button></form> 
+  </div>
+<p> 
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+
+<br>
+
+</p>
+
+<div class="form-group">
+    <b> <font color="White" align="Left">Static Modes </font> <b>
+<br>
+<br>
+
+<form action="http://192.168.43.139/light.php" method="get">
+  <input type="hidden" value="true" name="white">
+  <button class="btn whte" type="submit">White</button></form> 
+</div>
+
+
+<div class="form-group">
+    <br>
+    <br>
+    
+<form action="http://192.168.43.139/light.php" method="get">
+    <input type="hidden" value="true" name="indigo">
+    <button class="btn indigo" type="submit">Indigo</button></form>
+</div>
+
+
+ <div class="form-group">
+    <br>
+    <br>
+    
+<form action="http://192.168.43.139/light.php" method="get">
+  <input type="hidden" value="true" name="blue">
+  <button class="btn success2" type="submit">Blue</button></form> 
+</div>
+
+ 
+<div class="form-group">
+    <br>
+    <br>
+    
+<form action="http://192.168.43.139/light.php" method="get">
+  <input type="hidden" value="true" name="green">
+  <button class="btn success" type="submit">Green</button></form> 
+</div>
+
+
+<div class="form-group">
+    <br>
+    <br>
+    
+<form action="http://192.168.43.139/light.php" method="get">
+  <input type="hidden" value="true" name="yellow">
+  <button class="btn success3" type="submit">Yellow</button> </form> 
+</div>
+
+
+<div class="form-group">
+    <br>
+    <br>
+    
+ <form action="http://192.168.43.139/light.php" method="get">
+  <input type="hidden" value="true" name="orange">
+  <button class="btn orange" type="submit">Orange</button></form> 
+</div>
+
+
+  <div class="form-group">
+      <br>
+      <br>
+      
+<form action="http://192.168.43.139/light.php" method="get">
+<input type="hidden" value="true" name="red">
+<button class="btn danger" type="submit">Red</button></form> 
+</div>
+</div>
+
+
+</body>
+</html>

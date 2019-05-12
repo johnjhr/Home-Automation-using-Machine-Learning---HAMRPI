@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <title>ECE PROJECT- HOME UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-image {
+      /* The image used */
+      background-image: url("/bg.jpg");
+      
+      /* Add the blur effect */
+      filter: blur(2px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+    
+    </style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="security.html">Fire System</a></li>
+  <li><a href="sensors.html">Emotion Recog</a></li>
+  <li><a href="lighting.html">Lighting</a></li>
+  <li><a href="kitchen.html">Kitchen</a></li>
+  <li><a href="livingroom.html">Living-Room</a></li>
+
+</ul>
+</body>
+</head>
+<style>
+    .btn {
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .success {background-color: #4CAF50;} /* Green */
+    .success:hover {background-color: #46a049;}
+    .successt {background-color: rgb(44, 120, 139);} /* Green */
+    .successt:hover {background-color: #283e5a;}
+    .danger {background-color: #f44336;} /* Red */ 
+    .danger:hover {background: #da190b;}
+    
+ </style>
+
+<body >
+
+  <div class="bg-image"> </div>
+  <div class="bg-text">
+<br>
+<b><font color="White">Living-Room Lights </font><b>
+    <br>
+    <br>
+
+<p> <form action="http://192.168.43.139/ledon.php" method="get">
+  <input type="hidden" value="true" name="hello">
+  <button class="btn success" type="submit">Lights ON</button></form> 
+
+  <form action="http://192.168.43.139/ledoff.php" method="get">
+    <input type="hidden" value="true" name="hello">
+    <button class="btn danger" type="submit">Lights Off</button></form> 
+</form
+<br>
+
+
+<p> <form action="http://localhost/wifibuttons1.php" method="get">
+  <button class="btn success" type="submit">Wifi Bulb ON</button></form> 
+
+  <form action="http://localhost/wifibuttons2.php" method="get">
+    <button class="btn danger" type="submit">WiFi Bulb Off</button></form> 
+</form
+<br>
+<br>
+<br>
+<b><font color="White"> Living-Room Sensors </font> <b>
+    <br>
+    <br>
+    <form action="http://localhost/tempdata.html" >
+      
+      <button class="btn successt" type="submit">Temperature Data</button></form>
+
+      <form action="http://192.168.43.139/temp.php" method="get">
+        <input type="hidden" value="true" name="hello">
+        <button class="btn successt" type="submit">View Temperature</button></form>
+<br>
+<br>
+<b> <font color="White">Living-Room Fan </font> <b>
+    <br>
+    <br>
+
+    <form action="http://192.168.43.139/fanon.php" method="get">
+      <input type="hidden" value="true" name="hello">
+      <button class="btn success" type="submit">Fan ON</button></form> 
+
+    <form action="http://192.168.43.139/fanoff.php" method="get">
+      <input type="hidden" value="true" name="hello">
+      <button class="btn danger" type="submit">Fan Off</button></form> 
+</form> 
+</div>
+</body>
+</html>

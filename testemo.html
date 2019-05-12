@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="security.html">Security</a></li>
+  <li><a href="sensors.html">Emotion Recog</a></li>
+  <li><a href="lighting.html">Lighting</a></li>
+  <li><a href="kitchen.html">Kitchen</a></li>
+  <li><a href="livingroom.html">Living-Room</a></li>
+
+</ul>
+
+</body>
+
+</head>
+
+<body background="bg.jpg">
+<br>
+<a class="weatherwidget-io" href="https://forecast7.com/en/21d1772d83/surat/" data-label_1="SURAT" data-label_2="WEATHER" data-font="Arial Black" data-icons="Climacons Animated" data-theme="pure" data-basecolor="" data-accent="" data-textcolor="#ffffff" data-lowcolor="#f4f3f3" data-suncolor="#faf7f5" data-mooncolor="#fbf4f4" data-cloudcolor="#fcf0f0" data-raincolor="#eff4f8" data-snowcolor="#f0f5f5" >SURAT WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<h1><font color="White">Welcome to Your Dashboard</font> 
+<iframe src="http://free.timeanddate.com/clock/i6lci0ah/n1580/tlin/fn2/fs19/fcfff/tct/ftb/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4" frameborder="0" width="247" height="62" align="Right" allowTransparency="true"></iframe> </h1> 
+<style>
+    .btn {
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .success {background-color: #4CAF50;} /* Green */
+    .success:hover {background-color: #46a049;}
+    
+    .danger {background-color: #f44336;} /* Red */ 
+    .danger:hover {background: #da190b;}
+    
+ </style>
+ <br>
+ <br>
+ <b><font color="White">Bedroom Lights </font><b>
+    <br> 
+
+<p> <form action="/result.php" method="get">
+<button class="btn success" type="submit">Detect Emotion</button>
+<button class="btn danger" type="submit" formaction="/result.php">bleh</button> 
+</form>
+</body>
+</html>

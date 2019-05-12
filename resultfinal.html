@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <title>ECE PROJECT- HOME UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-image {
+      /* The image used */
+      background-image: url("/bg.jpg");
+      
+      /* Add the blur effect */
+      filter: blur(2px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 72.4%;
+  padding: 10px;
+  text-align: center;
+}
+    
+    </style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="security.html">Fire System</a></li>
+  <li><a href="sensors.html">Emotion Recog</a></li>
+  <li><a href="lighting.html">Lighting</a></li>
+  <li><a href="kitchen.html">Kitchen</a></li>
+  <li><a href="livingroom.html">Living-Room</a></li>
+
+</ul>
+</body>
+</head>
+<style>
+    .btn {
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      float: left;
+    }
+    
+    .success {background-color: #4CAF50;} 
+    .success2 {background-color:  #003865;} 
+    .success2:hover {background-color:  #003813;} 
+    .success3 {background-color: #da190b;}
+    .success3:hover {background-color: #a51704;}
+    .success4 {background-color:  #8e04ff;} 
+    .success4:hover {background-color:  #8e04ae;} 
+    .success:hover {background-color: #46a049;}
+    
+    .danger {background-color: #f44336;} /* Red */ 
+    .danger:hover {background: #da190b;}
+    
+ </style>
+
+<body >
+
+  <div class="bg-image"> </div>
+  <div class="bg-text">
+
+
+<h1 align=left><font color="White" align="Left">Emotion Recognition </font> </h1>
+
+<div m=rightemo align=Left>
+    <form action="/result.php" method="get">
+      <button class="btn success" type="submit">Detect Emotion</button> 
+  </form>
+  </div>
+
+  <div m=leftemo>
+    <form action="/music.php" method="get"> 
+      <button class="btn success2" type="submit">Automate Music</button> </form>
+    <form action="/musicstop.php" method="get">
+      <button class="btn success3" type="submit">Mute Music</button>  </form>
+      <form action="/lights.php" >
+        <button class="btn success4" type="submit">Automate Lights</button>  </form>
+        <form action="/reset.php" method="get">
+          <button class="btn success3" type="submit">Reset System</button>  </form>
+          <form action="/alsexec.php" method="get">
+            <button class="btn success" type="submit">Automate System</button>  </form>
+  </div>
+  <p>  <br> 
+  <br>
+<h1> <br> </h1>
+<h1 align=left><font color="White" align=left>Detected Emotion:</font></h1>
+ <br>
+    <iframe align="left" width="400" height="400" src="emo.php"  
+        frameborder="no" scrolling="no" name="myIframe" id="myIframe"> </iframe>
+      </p>
+</body>
+</html>

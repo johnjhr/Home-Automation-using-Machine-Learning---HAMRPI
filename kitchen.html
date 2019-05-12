@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <title>ECE PROJECT- HOME UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-image {
+      /* The image used */
+      background-image: url("/bg.jpg");
+      
+      /* Add the blur effect */
+      filter: blur(2px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+    
+    </style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="security.html">Fire System</a></li>
+  <li><a href="sensors.html">Emotion Recog</a></li>
+  <li><a href="lighting.html">Lighting</a></li>
+  <li><a href="kitchen.html">Kitchen</a></li>
+  <li><a href="livingroom.html">Living-Room</a></li>
+
+</ul>
+</body>
+</head>
+<style>
+    .btn {
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .success {background-color: #4CAF50;} /* Green */
+    .success:hover {background-color: #46a049;}
+    
+    .danger {background-color: #f44336;} /* Red */ 
+    .danger:hover {background: #da190b;}
+    
+ </style>
+
+<body >
+
+  <div class="bg-image"> </div>
+  <div class="bg-text">
+
+<br>
+<b><font color="White">Kitchen Lights </font><b>
+<p> <form action="/ledon.php?hello=true" method="get">
+<button class="btn success" type="submit">Lights ON</button>
+<button class="btn danger" type="submit" formaction="/ledoff.php?hello=true">Lights OFF</button> 
+</form>
+
+<br>
+<b><font color="White"> Kitchen Sensors </font> <b>
+    <br>
+    <br>
+    <form action="/ledon.php?hello=true" method="get">
+        <button class="btn success" type="submit">Lights ON</button>
+        <form action="/ledoff.php?hello=true">
+        <button class="btn danger" type="submit">Lights OFF</button>
+</form>
+<br>
+
+<b> <font color="White">Kitchen Fan </font> <b>
+    <br>
+<br>
+<form action="/action_page.php" method="get">
+  <button class="btn success" type="submit">FAN ON</button>
+  <button class="btn danger" type="submit" formaction="/action_page2.php">FAN OFF</button>
+</form> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <title>ECE PROJECT- HOME UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-image {
+      /* The image used */
+      background-image: url("/bg.jpg");
+      
+      /* Add the blur effect */
+      filter: blur(2px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 50px;
+  text-align: center;
+}
+    
+    </style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="security.html">Fire System</a></li>
+  <li><a href="sensors.html">Emotion Recog</a></li>
+  <li><a href="lighting.html">Lighting</a></li>
+  <li><a href="kitchen.html">Kitchen</a></li>
+  <li><a href="livingroom.html">Living-Room</a></li>
+
+</ul>
+
+</body>
+
+</head>
+
+<body >
+  
+    <div class="bg-image"> 
+        <div id="particles-js">
+            
+        </div>
+        
+        <!-- particles.js container --> 
+        
+
+    
+      </div> 
+  
+
+     
+    <div class="bg-text">
+        <h2>Welcome</h2>
+        <p></p>
+        <br>
+        <a href = "lighting.html" target = "_self"> 
+          <img src="/resources/icons/ambientlights/icons8-paint-palette-filled-100.png" border="1" border-color= white>
+       </a>
+       <a href = "livingroom.html" target = "_self"> 
+        <img src="/resources/icons/ambientlights/ledf.png" border="1" border-color= white >
+     </a>
+     <a href = "livingroom.html" target = "_self"> 
+      <img src="/resources/icons/Doors/door.png" border="1" border-color= white>
+   </a>
+  </a>
+  <a href = "livingroom.html" target = "_self"> 
+    <img src="/resources/icons/Fans/fan.png" border="1" border-color= white>
+  </a>
+  <a href = ".com" target = "_self"> 
+    <img src="/resources/icons/Lights/icons8-greentech-100.png" border="1" border-color= white>
+  </a>
+  <a href = "/musicstop2.php" target = "_self"> 
+    <img src="/resources/icons/Music/icons8-sound-filled-100.png" border="1" border-color= white>
+    </a>
+  <a href = "tempdata.html" target = "_self"> 
+    <img src="/resources/icons/tempgraph/icons8-combo-chart-filled-100.png" border="1" border-color= white>
+  </a>
+  <a href = "" target = "_self"> 
+    <img src="/resources/icons/armdisarm/homearm.png" border="1" border-color= white>
+    </a>
+  <a href = "security.html" target = "_self"> 
+    <img src="/resources/icons/warning/icons8-warning-shield-filled-100.png" border="1" border-color= white>
+  </a>  
+        <br>
+        <br>
+        <!--Script for changing icons-->
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/21d1772d83/surat/" data-label_1="SURAT" data-label_2="WEATHER" data-font="Arial Black" data-icons="Climacons Animated" data-theme="pure" data-basecolor="" data-accent="" data-textcolor="#ffffff" data-lowcolor="#f4f3f3" data-suncolor="#faf7f5" data-mooncolor="#fbf4f4" data-cloudcolor="#fcf0f0" data-raincolor="#eff4f8" data-snowcolor="#f0f5f5" >SURAT WEATHER</a>
+<br>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<iframe src="http://free.timeanddate.com/clock/i6lci0ah/n1580/tlin/fn2/fs19/fcfff/tct/ftb/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4" frameborder="1" width="247" height="59" align="Center" allowTransparency="true"></iframe> </h1> 
+ 
+    </div>
+</body>
+</html>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+

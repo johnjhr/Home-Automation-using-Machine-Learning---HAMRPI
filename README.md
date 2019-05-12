@@ -1,4 +1,4 @@
-<B> NOTE: </b> -- Project in progress -- Possible updates by April 5, 2019 ---
+<B> NOTE: </b> --- Documentation  in progress -- Possible updates by June 5, 2019 ---
 
 <h> Home Automation based on Machine Learning. </h>
 
@@ -18,4 +18,4 @@
 A web-app is being developed on this, so that it can be accessed from ios/android/windows browsers.
 
 
-<B> NOTE: </b> -- Project in progress -- Possible updates by April 5, 2019 ---
+<B> NOTE: </b> --- Documentation  in progress -- Possible updates by June 5, 2019 ---

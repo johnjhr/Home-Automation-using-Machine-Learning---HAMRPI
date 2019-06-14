@@ -16,5 +16,5 @@
 
 <b> <u> Web UI screeshots </u> </b>
 
-![Concept] (https://github.com/johnjaiharjose/Home-Automation-using-Machine-Learning---HAMRPI/blob/master/fullui.png)
+![Concept](https://github.com/johnjaiharjose/Home-Automation-using-Machine-Learning---HAMRPI/blob/master/fullui.png)
 

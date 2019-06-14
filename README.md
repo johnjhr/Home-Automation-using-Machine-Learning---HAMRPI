@@ -1,4 +1,3 @@
-<B> NOTE: </b> --- Documentation  in progress -- Possible updates by June 5, 2019 ---
 
 <h> Home Automation based on Machine Learning. </h>
 
@@ -15,7 +14,7 @@
 
 <b>Model_Emo.py</b> is for analysing the emotion from input image and to save the result in two different locations.
 
-A web-app is being developed on this, so that it can be accessed from ios/android/windows browsers.
+<b> <u> Web UI screeshots </u> </b>
 
+![Concept] (https://github.com/johnjaiharjose/Home-Automation-using-Machine-Learning---HAMRPI/blob/master/fullui.png)
 
-<B> NOTE: </b> --- Documentation  in progress -- Possible updates by June 5, 2019 ---

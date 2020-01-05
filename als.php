@@ -1,6 +1,9 @@
 <?php
-header('Location: resultfinal.html');
+/**
+ * Header File.
+ */
 
+header('Location: resultfinal.html');
 
 #exec('lights.py')
 #ec

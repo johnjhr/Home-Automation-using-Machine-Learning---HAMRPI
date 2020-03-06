@@ -1,6 +1,8 @@
 
 <h> Home Automation based on Machine Learning. </h>
 
+Read Research paper soon. Accepted and soon to be published by IEEE INCET 2020.
+
 <b> <u> Brief Description: </u></b>
 - This project uses Machine Learning for Emotion recognition using Linear SVM.
 - The detected emotion is then used to automate home appliances like Ambient Lighting, Music system...etc

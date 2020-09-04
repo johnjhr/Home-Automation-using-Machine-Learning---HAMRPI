@@ -1,7 +1,11 @@
 
 <h> Home Automation based on Machine Learning. </h>
 
-Read Research paper soon. Accepted and soon to be published by IEEE INCET 2020.
+Research paper - published by IEEE INCET 2020.
+![Link](https://ieeexplore.ieee.org/abstract/document/9154007) 
+
+<b> Citation <b>
+J. Jaihar, N. Lingayat, P. S. Vijaybhai, G. Venkatesh and K. P. Upla, "Smart Home Automation Using Machine Learning Algorithms," 2020 International Conference for Emerging Technology (INCET), Belgaum, India, 2020, pp. 1-4, doi: 10.1109/INCET49848.2020.9154007.
 
 <b> <u> Brief Description: </u></b>
 - This project uses Machine Learning for Emotion recognition using Linear SVM.
